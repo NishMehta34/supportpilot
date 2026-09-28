@@ -5,6 +5,7 @@ import urllib.request
 
 from pydantic import ValidationError
 
+from app.json_cleanup import extract_json
 from app.schemas import TicketClassification
 
 MODEL = "qwen3"
@@ -56,7 +57,7 @@ def classify_message(message, chat_fn=ollama_chat, max_attempts=3):
     for _ in range(max_attempts):
         raw = chat_fn(messages, schema)
         try:
-            return TicketClassification.model_validate_json(raw)
+            return TicketClassification.model_validate_json(extract_json(raw))
         except ValidationError as error:
             last_error = error
             # Tell the model what went wrong so the retry can improve.

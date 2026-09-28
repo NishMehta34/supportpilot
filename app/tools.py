@@ -21,16 +21,21 @@ PRODUCTS = {
 }
 
 
+def normalize_id(value) -> str:
+    """' ord-1001 ' -> 'ORD-1001' (models often change case or add spaces)."""
+    return str(value).strip().upper()
+
+
 def get_order(order_id: str) -> dict:
-    return ORDERS.get(order_id) or {"error": f"Order {order_id} not found"}
+    return ORDERS.get(normalize_id(order_id)) or {"error": f"Order {order_id} not found"}
 
 
 def get_customer(customer_id: str) -> dict:
-    return CUSTOMERS.get(customer_id) or {"error": f"Customer {customer_id} not found"}
+    return CUSTOMERS.get(normalize_id(customer_id)) or {"error": f"Customer {customer_id} not found"}
 
 
 def get_product(product_id: str) -> dict:
-    return PRODUCTS.get(product_id) or {"error": f"Product {product_id} not found"}
+    return PRODUCTS.get(normalize_id(product_id)) or {"error": f"Product {product_id} not found"}
 
 
 TOOL_FUNCTIONS = {

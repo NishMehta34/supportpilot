@@ -34,3 +34,10 @@
 4. Summary: `artifacts/day04.json`; per-run traces: `artifacts/traces/`
 
 The agent is bounded: max 6 steps, stops on repeated identical tool calls.
+
+## How to run Day 5
+1. `source .venv/bin/activate`
+2. `bash scripts/test.sh` runs all tests (no model needed)
+3. Bug log: `docs/day05-bugs.md`
+
+Tests use `FakeAdapter` (app/model_adapter.py), a scripted stand-in for the real model.

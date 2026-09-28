@@ -71,14 +71,14 @@ def test_repeated_call_stops_the_agent():
         return call("get_order", order_id="ORD-1001")
 
     run = run_agent("stuck", chat_fn=stuck, max_steps=6)
-    assert run["stop_reason"] == "repeated_call"
+    assert run["stop_reason"] == "stuck_in_loop"
     assert run["steps_used"] < 6
 
 
 def test_unknown_tool_does_not_crash_the_loop():
     model = scripted(call("hack_system"), answer("Sorry, I cannot do that."))
     run = run_agent("bad", chat_fn=model)
-    assert "error" in run["steps"][0]["tool_calls"][0]["result"]
+    assert "error" in run["trace"][0]["result"]
     assert run["stop_reason"] == "final_answer"
 
 

@@ -3,6 +3,7 @@
 import json
 import urllib.request
 
+from app.tool_calls import parse_tool_call
 from app.tools import TOOL_SCHEMAS, execute_tool
 
 MODEL = "qwen3"
@@ -44,13 +45,7 @@ def answer_with_tools(user_prompt, chat_fn=ollama_chat):
 
     tools_called = []
     for call in first_reply.get("tool_calls") or []:
-        name = call["function"]["name"]
-        arguments = call["function"]["arguments"]
-        if isinstance(arguments, str):  # some models send arguments as text
-            try:
-                arguments = json.loads(arguments)
-            except json.JSONDecodeError:
-                arguments = {}
+        name, arguments = parse_tool_call(call)  # safe even if the call is malformed
 
         # Step 2: WE run the tool (the model never runs anything itself).
         result = execute_tool(name, arguments)
