@@ -41,3 +41,8 @@ The agent is bounded: max 6 steps, stops on repeated identical tool calls.
 3. Bug log: `docs/day05-bugs.md`
 
 Tests use `FakeAdapter` (app/model_adapter.py), a scripted stand-in for the real model.
+
+## Day 6: RAG design
+- Design document: `docs/rag-design.md` (includes the architecture diagram)
+- Knowledge base (5 documents): `data/kb/`
+- Preview the chunking: `python3 scripts/preview_chunks.py`
