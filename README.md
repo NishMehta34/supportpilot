@@ -13,3 +13,10 @@
 2. Make sure Ollama is running.
 3. Run `python3 app/llm_demo.py`
 4. The result is saved to `artifacts/day01.json`
+
+## How to run Day 2
+1. `python3 -m venv .venv && source .venv/bin/activate`
+2. `pip install -r requirements.txt`
+3. `pytest` (no model needed)
+4. `python3 -m app.classify_demo` (Ollama must be running)
+5. Results are saved to `artifacts/day02.json`

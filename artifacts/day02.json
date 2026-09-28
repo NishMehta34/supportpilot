@@ -1,0 +1,95 @@
+{
+  "model": "qwen3",
+  "results": [
+    {
+      "message": "I was charged twice for my subscription this month!",
+      "classification": {
+        "category": "billing",
+        "priority": "high",
+        "summary": "Customer was charged twice for their subscription this month.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "message": "The app crashes every time I open the settings page.",
+      "classification": {
+        "category": "technical",
+        "priority": "high",
+        "summary": "App crashes when opening the settings page",
+        "confidence": 0.95
+      }
+    },
+    {
+      "message": "My package was supposed to arrive last week and still hasn't.",
+      "classification": {
+        "category": "shipping",
+        "priority": "high",
+        "summary": "Customer's package is delayed and has not arrived as expected.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "message": "I can't log in, it says my password is wrong but I just reset it.",
+      "classification": {
+        "category": "account",
+        "priority": "high",
+        "summary": "User unable to log in after password reset",
+        "confidence": 0.95
+      }
+    },
+    {
+      "message": "How do I change the email address on my account?",
+      "classification": {
+        "category": "account",
+        "priority": "medium",
+        "summary": "Customer wants to update their account email address.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "message": "URGENT: my whole team is locked out and we have a demo in an hour!",
+      "classification": {
+        "category": "account",
+        "priority": "urgent",
+        "summary": "Team locked out of account with an upcoming demo",
+        "confidence": 0.95
+      }
+    },
+    {
+      "message": "Can I get a refund for an order I cancelled?",
+      "classification": {
+        "category": "billing",
+        "priority": "medium",
+        "summary": "Customer is asking about refund for a cancelled order",
+        "confidence": 0.95
+      }
+    },
+    {
+      "message": "The tracking link you sent me shows an error.",
+      "classification": {
+        "category": "shipping",
+        "priority": "medium",
+        "summary": "Customer reports an error with the provided tracking link.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "message": "I just wanted to say thanks, your service is great.",
+      "classification": {
+        "category": "other",
+        "priority": "low",
+        "summary": "Customer expressed gratitude for the service.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "message": "Your invoice shows the wrong company name.",
+      "classification": {
+        "category": "billing",
+        "priority": "high",
+        "summary": "Customer claims invoice has incorrect company name",
+        "confidence": 0.95
+      }
+    }
+  ]
+}
