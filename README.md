@@ -20,3 +20,9 @@
 3. `pytest` (no model needed)
 4. `python3 -m app.classify_demo` (Ollama must be running)
 5. Results are saved to `artifacts/day02.json`
+
+## How to run Day 3
+1. Activate the environment: `source .venv/bin/activate`
+2. `pytest` (no model needed)
+3. `python3 -m app.tool_demo` (Ollama must be running)
+4. Transcripts are saved to `artifacts/day03.json`

@@ -1,0 +1,454 @@
+{
+  "model": "qwen3",
+  "runs": [
+    {
+      "prompt": "Where is my order ORD-1001?",
+      "tools_called": [
+        {
+          "name": "get_order",
+          "arguments": {
+            "order_id": "ORD-1001"
+          },
+          "result": {
+            "order_id": "ORD-1001",
+            "customer_id": "CUS-001",
+            "product_id": "PRD-001",
+            "status": "shipped",
+            "eta": "2026-10-02"
+          }
+        }
+      ],
+      "final_answer": "Your order **ORD-1001** has been shipped. It is expected to arrive by **October 2, 2026**. If you have any further questions, feel free to ask!",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a customer support assistant. Use the tools to look up orders, customers and products. If the user has not given the ID a tool needs, ask them for it instead of guessing. If the question is not about orders, customers or products, politely say you can only help with those. Never invent data that a tool did not return."
+        },
+        {
+          "role": "user",
+          "content": "Where is my order ORD-1001?"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call_yl214yxj",
+              "function": {
+                "index": 0,
+                "name": "get_order",
+                "arguments": {
+                  "order_id": "ORD-1001"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_name": "get_order",
+          "content": "{\"order_id\": \"ORD-1001\", \"customer_id\": \"CUS-001\", \"product_id\": \"PRD-001\", \"status\": \"shipped\", \"eta\": \"2026-10-02\"}"
+        }
+      ],
+      "expected_tool": "get_order",
+      "correct": true
+    },
+    {
+      "prompt": "What's the status of ORD-1002?",
+      "tools_called": [
+        {
+          "name": "get_order",
+          "arguments": {
+            "order_id": "ORD-1002"
+          },
+          "result": {
+            "order_id": "ORD-1002",
+            "customer_id": "CUS-002",
+            "product_id": "PRD-002",
+            "status": "processing",
+            "eta": "2026-10-06"
+          }
+        }
+      ],
+      "final_answer": "The order with ID ORD-1002 is currently in the \"processing\" status. The estimated time of arrival (ETA) is October 6, 2026. Let me know if you need further assistance!",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a customer support assistant. Use the tools to look up orders, customers and products. If the user has not given the ID a tool needs, ask them for it instead of guessing. If the question is not about orders, customers or products, politely say you can only help with those. Never invent data that a tool did not return."
+        },
+        {
+          "role": "user",
+          "content": "What's the status of ORD-1002?"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call_4nq6xnt7",
+              "function": {
+                "index": 0,
+                "name": "get_order",
+                "arguments": {
+                  "order_id": "ORD-1002"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_name": "get_order",
+          "content": "{\"order_id\": \"ORD-1002\", \"customer_id\": \"CUS-002\", \"product_id\": \"PRD-002\", \"status\": \"processing\", \"eta\": \"2026-10-06\"}"
+        }
+      ],
+      "expected_tool": "get_order",
+      "correct": true
+    },
+    {
+      "prompt": "Look up customer CUS-001 for me.",
+      "tools_called": [
+        {
+          "name": "get_customer",
+          "arguments": {
+            "customer_id": "CUS-001"
+          },
+          "result": {
+            "customer_id": "CUS-001",
+            "name": "Asha Patel",
+            "email": "asha@example.com",
+            "tier": "gold"
+          }
+        }
+      ],
+      "final_answer": "The customer information for CUS-001 is as follows:\n\n- **Name:** Asha Patel\n- **Email:** ash@example.com\n- **Tier:** Gold\n\nLet me know if you need anything else!",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a customer support assistant. Use the tools to look up orders, customers and products. If the user has not given the ID a tool needs, ask them for it instead of guessing. If the question is not about orders, customers or products, politely say you can only help with those. Never invent data that a tool did not return."
+        },
+        {
+          "role": "user",
+          "content": "Look up customer CUS-001 for me."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call_3gb89pnk",
+              "function": {
+                "index": 0,
+                "name": "get_customer",
+                "arguments": {
+                  "customer_id": "CUS-001"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_name": "get_customer",
+          "content": "{\"customer_id\": \"CUS-001\", \"name\": \"Asha Patel\", \"email\": \"asha@example.com\", \"tier\": \"gold\"}"
+        }
+      ],
+      "expected_tool": "get_customer",
+      "correct": true
+    },
+    {
+      "prompt": "What email do we have for customer CUS-002?",
+      "tools_called": [
+        {
+          "name": "get_customer",
+          "arguments": {
+            "customer_id": "CUS-002"
+          },
+          "result": {
+            "customer_id": "CUS-002",
+            "name": "Ben Carter",
+            "email": "ben@example.com",
+            "tier": "standard"
+          }
+        }
+      ],
+      "final_answer": "The email address for customer CUS-002 is ben@example.com.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a customer support assistant. Use the tools to look up orders, customers and products. If the user has not given the ID a tool needs, ask them for it instead of guessing. If the question is not about orders, customers or products, politely say you can only help with those. Never invent data that a tool did not return."
+        },
+        {
+          "role": "user",
+          "content": "What email do we have for customer CUS-002?"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call_plzox92f",
+              "function": {
+                "index": 0,
+                "name": "get_customer",
+                "arguments": {
+                  "customer_id": "CUS-002"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_name": "get_customer",
+          "content": "{\"customer_id\": \"CUS-002\", \"name\": \"Ben Carter\", \"email\": \"ben@example.com\", \"tier\": \"standard\"}"
+        }
+      ],
+      "expected_tool": "get_customer",
+      "correct": true
+    },
+    {
+      "prompt": "How much does product PRD-001 cost?",
+      "tools_called": [
+        {
+          "name": "get_product",
+          "arguments": {
+            "product_id": "PRD-001"
+          },
+          "result": {
+            "product_id": "PRD-001",
+            "name": "Wireless Mouse",
+            "price": 24.99,
+            "in_stock": true
+          }
+        }
+      ],
+      "final_answer": "The product PRD-001, Wireless Mouse, costs $24.99.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a customer support assistant. Use the tools to look up orders, customers and products. If the user has not given the ID a tool needs, ask them for it instead of guessing. If the question is not about orders, customers or products, politely say you can only help with those. Never invent data that a tool did not return."
+        },
+        {
+          "role": "user",
+          "content": "How much does product PRD-001 cost?"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call_b0wupu9m",
+              "function": {
+                "index": 0,
+                "name": "get_product",
+                "arguments": {
+                  "product_id": "PRD-001"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_name": "get_product",
+          "content": "{\"product_id\": \"PRD-001\", \"name\": \"Wireless Mouse\", \"price\": 24.99, \"in_stock\": true}"
+        }
+      ],
+      "expected_tool": "get_product",
+      "correct": true
+    },
+    {
+      "prompt": "Is PRD-003 in stock?",
+      "tools_called": [
+        {
+          "name": "get_product",
+          "arguments": {
+            "product_id": "PRD-003"
+          },
+          "result": {
+            "product_id": "PRD-003",
+            "name": "USB-C Hub",
+            "price": 45.5,
+            "in_stock": false
+          }
+        }
+      ],
+      "final_answer": "The product \"USB-C Hub\" (ID: PRD-003) is currently out of stock. Would you like to be notified when it becomes available or check another product?",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a customer support assistant. Use the tools to look up orders, customers and products. If the user has not given the ID a tool needs, ask them for it instead of guessing. If the question is not about orders, customers or products, politely say you can only help with those. Never invent data that a tool did not return."
+        },
+        {
+          "role": "user",
+          "content": "Is PRD-003 in stock?"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call_y1t1le8q",
+              "function": {
+                "index": 0,
+                "name": "get_product",
+                "arguments": {
+                  "product_id": "PRD-003"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_name": "get_product",
+          "content": "{\"product_id\": \"PRD-003\", \"name\": \"USB-C Hub\", \"price\": 45.5, \"in_stock\": false}"
+        }
+      ],
+      "expected_tool": "get_product",
+      "correct": true
+    },
+    {
+      "prompt": "Who is customer CUS-003 and what tier are they?",
+      "tools_called": [
+        {
+          "name": "get_customer",
+          "arguments": {
+            "customer_id": "CUS-003"
+          },
+          "result": {
+            "customer_id": "CUS-003",
+            "name": "Chen Wei",
+            "email": "chen@example.com",
+            "tier": "premium"
+          }
+        }
+      ],
+      "final_answer": "Customer CUS-003 is Chen Wei, and they are in the premium tier.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a customer support assistant. Use the tools to look up orders, customers and products. If the user has not given the ID a tool needs, ask them for it instead of guessing. If the question is not about orders, customers or products, politely say you can only help with those. Never invent data that a tool did not return."
+        },
+        {
+          "role": "user",
+          "content": "Who is customer CUS-003 and what tier are they?"
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call_fbxvi51r",
+              "function": {
+                "index": 0,
+                "name": "get_customer",
+                "arguments": {
+                  "customer_id": "CUS-003"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_name": "get_customer",
+          "content": "{\"customer_id\": \"CUS-003\", \"name\": \"Chen Wei\", \"email\": \"chen@example.com\", \"tier\": \"premium\"}"
+        }
+      ],
+      "expected_tool": "get_customer",
+      "correct": true
+    },
+    {
+      "prompt": "Tell me about order ORD-9999.",
+      "tools_called": [
+        {
+          "name": "get_order",
+          "arguments": {
+            "order_id": "ORD-9999"
+          },
+          "result": {
+            "error": "Order ORD-9999 not found"
+          }
+        }
+      ],
+      "final_answer": "I couldn't find any information about order ORD-9999. Could you please double-check the order ID or provide additional details?",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a customer support assistant. Use the tools to look up orders, customers and products. If the user has not given the ID a tool needs, ask them for it instead of guessing. If the question is not about orders, customers or products, politely say you can only help with those. Never invent data that a tool did not return."
+        },
+        {
+          "role": "user",
+          "content": "Tell me about order ORD-9999."
+        },
+        {
+          "role": "assistant",
+          "content": "",
+          "tool_calls": [
+            {
+              "id": "call_fk8g4kum",
+              "function": {
+                "index": 0,
+                "name": "get_order",
+                "arguments": {
+                  "order_id": "ORD-9999"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "role": "tool",
+          "tool_name": "get_order",
+          "content": "{\"error\": \"Order ORD-9999 not found\"}"
+        }
+      ],
+      "expected_tool": "get_order",
+      "correct": true
+    },
+    {
+      "prompt": "Where is my order?",
+      "tools_called": [],
+      "final_answer": "To check the status and delivery date of your order, I'll need the order ID. Could you please provide it?",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a customer support assistant. Use the tools to look up orders, customers and products. If the user has not given the ID a tool needs, ask them for it instead of guessing. If the question is not about orders, customers or products, politely say you can only help with those. Never invent data that a tool did not return."
+        },
+        {
+          "role": "user",
+          "content": "Where is my order?"
+        },
+        {
+          "role": "assistant",
+          "content": "To check the status and delivery date of your order, I'll need the order ID. Could you please provide it?"
+        }
+      ],
+      "expected_tool": null,
+      "correct": true
+    },
+    {
+      "prompt": "What's the weather in Paris?",
+      "tools_called": [],
+      "final_answer": "I can only help with orders, customers, or products. Let me know if you need assistance with those!",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a customer support assistant. Use the tools to look up orders, customers and products. If the user has not given the ID a tool needs, ask them for it instead of guessing. If the question is not about orders, customers or products, politely say you can only help with those. Never invent data that a tool did not return."
+        },
+        {
+          "role": "user",
+          "content": "What's the weather in Paris?"
+        },
+        {
+          "role": "assistant",
+          "content": "I can only help with orders, customers, or products. Let me know if you need assistance with those!"
+        }
+      ],
+      "expected_tool": null,
+      "correct": true
+    }
+  ]
+}
