@@ -1,0 +1,60 @@
+{
+  "task": "Which orders are currently processing, and who are the customers?",
+  "model": "qwen3",
+  "max_steps": 6,
+  "steps_used": 3,
+  "stop_reason": "final_answer",
+  "final_answer": "The order with ID **ORD-1002** is currently processing. It belongs to **Ben Carter** (customer ID: CUS-002).",
+  "total_ms": 2558.63,
+  "steps": [
+    {
+      "step": 1,
+      "model_content": "",
+      "tool_calls": [
+        {
+          "name": "search_orders",
+          "arguments": {
+            "status": "processing"
+          },
+          "result": {
+            "orders": [
+              {
+                "order_id": "ORD-1002",
+                "customer_id": "CUS-002",
+                "product_id": "PRD-002",
+                "status": "processing",
+                "eta": "2026-10-06"
+              }
+            ],
+            "count": 1
+          },
+          "duration_ms": 0.02
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "model_content": "",
+      "tool_calls": [
+        {
+          "name": "get_customer",
+          "arguments": {
+            "customer_id": "CUS-002"
+          },
+          "result": {
+            "customer_id": "CUS-002",
+            "name": "Ben Carter",
+            "email": "ben@example.com",
+            "tier": "standard"
+          },
+          "duration_ms": 0.01
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "model_content": "The order with ID **ORD-1002** is currently processing. It belongs to **Ben Carter** (customer ID: CUS-002).",
+      "tool_calls": []
+    }
+  ]
+}

@@ -26,3 +26,11 @@
 2. `pytest` (no model needed)
 3. `python3 -m app.tool_demo` (Ollama must be running)
 4. Transcripts are saved to `artifacts/day03.json`
+
+## How to run Day 4
+1. Activate the environment: `source .venv/bin/activate`
+2. `pytest` (no model needed)
+3. `python3 -m app.agent_demo` (Ollama must be running)
+4. Summary: `artifacts/day04.json`; per-run traces: `artifacts/traces/`
+
+The agent is bounded: max 6 steps, stops on repeated identical tool calls.

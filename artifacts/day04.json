@@ -1,0 +1,78 @@
+{
+  "model": "qwen3",
+  "max_steps": 6,
+  "runs": [
+    {
+      "task": "Find all orders for customer CUS-001, then tell me the total price of the products in those orders.",
+      "expected_text": "70.49",
+      "answer_correct": true,
+      "stop_reason": "final_answer",
+      "steps_used": 5,
+      "tools_used": [
+        "search_orders",
+        "get_product",
+        "get_product",
+        "calculator"
+      ],
+      "final_answer": "The total price of the products in the orders for customer CUS-001 is $70.49.",
+      "trace_file": "artifacts/traces/day04_task01.json"
+    },
+    {
+      "task": "What is the name of the customer who placed order ORD-1002, and what product did they buy?",
+      "expected_text": "Ben Carter",
+      "answer_correct": true,
+      "stop_reason": "final_answer",
+      "steps_used": 4,
+      "tools_used": [
+        "get_order",
+        "get_customer",
+        "get_product"
+      ],
+      "final_answer": "The customer who placed order ORD-1002 is Ben Carter, and the product they bought is a Mechanical Keyboard.",
+      "trace_file": "artifacts/traces/day04_task02.json"
+    },
+    {
+      "task": "How much would 3 units of the product in order ORD-1001 cost?",
+      "expected_text": "74.97",
+      "answer_correct": true,
+      "stop_reason": "final_answer",
+      "steps_used": 4,
+      "tools_used": [
+        "get_order",
+        "get_product",
+        "calculator"
+      ],
+      "final_answer": "The total cost for 3 units of the product in order ORD-1001 would be $74.97.",
+      "trace_file": "artifacts/traces/day04_task03.json"
+    },
+    {
+      "task": "Which orders are currently processing, and who are the customers?",
+      "expected_text": "Ben Carter",
+      "answer_correct": true,
+      "stop_reason": "final_answer",
+      "steps_used": 3,
+      "tools_used": [
+        "search_orders",
+        "get_customer"
+      ],
+      "final_answer": "The order with ID **ORD-1002** is currently processing. It belongs to **Ben Carter** (customer ID: CUS-002).",
+      "trace_file": "artifacts/traces/day04_task04.json"
+    },
+    {
+      "task": "Compare the price of the products in ORD-1001 and ORD-1002. Which is cheaper and by how much?",
+      "expected_text": "64.01",
+      "answer_correct": true,
+      "stop_reason": "final_answer",
+      "steps_used": 4,
+      "tools_used": [
+        "get_order",
+        "get_order",
+        "get_product",
+        "get_product",
+        "calculator"
+      ],
+      "final_answer": "The product in ORD-1001 (Wireless Mouse) is cheaper than the product in ORD-1002 (Mechanical Keyboard) by $64.01.",
+      "trace_file": "artifacts/traces/day04_task05.json"
+    }
+  ]
+}
