@@ -54,3 +54,13 @@ Tests use `FakeAdapter` (app/model_adapter.py), a scripted stand-in for the real
 4. `python3 scripts/embed_kb.py` (embeds 20 chunks; Ollama must be running)
 5. `python3 scripts/similarity_demo.py` (tests 5+ queries against those chunks)
 6. Results: `artifacts/day07_embeddings.json`, `artifacts/day07_notes.json`, `artifacts/day07_notes.md`
+
+## How to run Day 8
+1. `docker compose up -d` starts Postgres + pgvector
+2. `pip install -r requirements.txt`
+3. `pytest` (uses a fake database, no Docker needed)
+4. `python3 scripts/ingest.py` loads the Nimbus knowledge base (tenant: nimbus)
+5. `python3 scripts/ingest.py --tenant acme --kb-dir data/kb_other_tenant` loads a second tenant
+6. `python3 scripts/search_db.py "your question"` searches (add `--tenant acme` to scope it)
+
+Schema: `db/init.sql`. Every chunk carries a `tenant_id`; every search filters by it.
