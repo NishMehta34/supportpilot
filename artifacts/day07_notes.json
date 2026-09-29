@@ -1,0 +1,266 @@
+[
+  {
+    "query": "How long do I have to return something?",
+    "expected_doc": "KB-RETURNS",
+    "top_score": 0.6661166662543758,
+    "top_doc": "KB-RETURNS",
+    "found_expected_in_top5": true,
+    "matches": [
+      {
+        "doc_id": "KB-RETURNS",
+        "section": "How to start a return",
+        "text": "Returns and Refunds > How to start a return\nOpen the order in your account, choose Request return, and select a reason. You will receive a return authorization (RMA) number and a prepaid shipping label by email. Write the RMA number on the box. Returns sent without an RMA number can take up to 10 extra business days to process.",
+        "chunk_id": 25,
+        "score": 0.6661166662543758
+      },
+      {
+        "doc_id": "KB-RETURNS",
+        "section": "Return window",
+        "text": "Returns and Refunds > Return window\nYou can return most items within 30 days of the delivery date. Gold members have 45 days and Premium members have 60 days. The window is counted from the date the carrier marks the package as delivered, not from the date you ordered.",
+        "chunk_id": 23,
+        "score": 0.6626673443820551
+      },
+      {
+        "doc_id": "KB-RETURNS",
+        "section": "Condition of returned items",
+        "text": "Returns and Refunds > Condition of returned items\nReturned items should be unused or like new and include the original packaging and all accessories. Opened electronics are accepted if they are not damaged by the customer, but a 15% restocking fee applies to opened electronics unless the item is defective.",
+        "chunk_id": 24,
+        "score": 0.6017022646779736
+      },
+      {
+        "doc_id": "KB-RETURNS",
+        "section": "Return shipping cost",
+        "text": "Returns and Refunds > Return shipping cost\nReturn labels are free when the item is defective, damaged, or sent by mistake. For any other reason, the label costs $6.95, which is deducted from your refund. You may also ship the item back yourself, but we cannot reimburse the postage.",
+        "chunk_id": 26,
+        "score": 0.572727852919681
+      },
+      {
+        "doc_id": "KB-WARRANTY",
+        "section": "How to make a warranty claim",
+        "text": "Warranty and Repairs > How to make a warranty claim\nEmail support with your order ID and photos or a short video showing the problem. We reply within 2 business days. A support agent may ask you to try basic troubleshooting first. Warranty claims are not limited by the return window, so you can claim long after 30 days as long as the product is still under warranty.",
+        "chunk_id": 48,
+        "score": 0.5238327532500625
+      }
+    ]
+  },
+  {
+    "query": "My package tracking hasn't updated in a while",
+    "expected_doc": "KB-SHIPPING",
+    "top_score": 0.5753712427695017,
+    "top_doc": "KB-SHIPPING",
+    "found_expected_in_top5": true,
+    "matches": [
+      {
+        "doc_id": "KB-SHIPPING",
+        "section": "Tracking your order",
+        "text": "Shipping Policy > Tracking your order\nYou will receive an email with a tracking number within 24 hours after your order ships. Tracking updates from the carrier can lag by up to 12 hours, so a package may look stuck for half a day even when it is moving. You can also see tracking in your account under Orders.",
+        "chunk_id": 36,
+        "score": 0.5753712427695017
+      },
+      {
+        "doc_id": "KB-TROUBLESHOOT",
+        "section": "Mouse: cursor lag or dropouts",
+        "text": "Product Troubleshooting > Mouse: cursor lag or dropouts\nIf the cursor stutters when using the dongle, move the dongle to a USB port closer to the mouse and away from USB 3.0 devices and external drives, which can cause interference. A short USB extension cable often fixes it. You can also switch to Bluetooth mode if the dongle keeps failing.",
+        "chunk_id": 12,
+        "score": 0.34425727213262025
+      },
+      {
+        "doc_id": "KB-SHIPPING",
+        "section": "Changing the delivery address",
+        "text": "Shipping Policy > Changing the delivery address\nYou can change the delivery address only while the order status is \"processing\". Once the status is \"shipped\", we cannot change the address, and you would need to contact the carrier directly to arrange a redirect. To change an address, open the order in your account and choose Edit address.",
+        "chunk_id": 37,
+        "score": 0.33842652291855113
+      },
+      {
+        "doc_id": "KB-WARRANTY",
+        "section": "How to make a warranty claim",
+        "text": "Warranty and Repairs > How to make a warranty claim\nEmail support with your order ID and photos or a short video showing the problem. We reply within 2 business days. A support agent may ask you to try basic troubleshooting first. Warranty claims are not limited by the return window, so you can claim long after 30 days as long as the product is still under warranty.",
+        "chunk_id": 48,
+        "score": 0.3126373631247832
+      },
+      {
+        "doc_id": "KB-RETURNS",
+        "section": "How to start a return",
+        "text": "Returns and Refunds > How to start a return\nOpen the order in your account, choose Request return, and select a reason. You will receive a return authorization (RMA) number and a prepaid shipping label by email. Write the RMA number on the box. Returns sent without an RMA number can take up to 10 extra business days to process.",
+        "chunk_id": 25,
+        "score": 0.30587976905262887
+      }
+    ]
+  },
+  {
+    "query": "The keyboard has keys that don't work anymore",
+    "expected_doc": "KB-WARRANTY",
+    "top_score": 0.42023817716352013,
+    "top_doc": "KB-WARRANTY",
+    "found_expected_in_top5": true,
+    "matches": [
+      {
+        "doc_id": "KB-WARRANTY",
+        "section": "What the warranty covers",
+        "text": "Warranty and Repairs > What the warranty covers\nThe warranty covers manufacturing defects such as a dead sensor or scroll wheel on the mouse, switches or keys that stop registering on the keyboard, and ports that stop working on the hub. Batteries that come with a product are covered for 6 months only.",
+        "chunk_id": 46,
+        "score": 0.42023817716352013
+      },
+      {
+        "doc_id": "KB-WARRANTY",
+        "section": "What is not covered",
+        "text": "Warranty and Repairs > What is not covered\nThe warranty does not cover liquid damage, drops or crushing, damage from repairs done by anyone other than Nimbus, normal wear such as shiny keycaps, or loss and theft. Damage caused by using a power adapter that is not rated for the product is also excluded.",
+        "chunk_id": 47,
+        "score": 0.4037275968823187
+      },
+      {
+        "doc_id": "KB-TROUBLESHOOT",
+        "section": "Mouse: factory reset",
+        "text": "Product Troubleshooting > Mouse: factory reset\nIf the mouse behaves erratically, hold the left button, right button, and scroll wheel together for 10 seconds until the LED flashes white. This removes all Bluetooth pairings, so you will need to pair the mouse again afterwards.",
+        "chunk_id": 14,
+        "score": 0.40150812470301545
+      },
+      {
+        "doc_id": "KB-TROUBLESHOOT",
+        "section": "Mouse: cursor lag or dropouts",
+        "text": "Product Troubleshooting > Mouse: cursor lag or dropouts\nIf the cursor stutters when using the dongle, move the dongle to a USB port closer to the mouse and away from USB 3.0 devices and external drives, which can cause interference. A short USB extension cable often fixes it. You can also switch to Bluetooth mode if the dongle keeps failing.",
+        "chunk_id": 12,
+        "score": 0.3692111852651791
+      },
+      {
+        "doc_id": "KB-WARRANTY",
+        "section": "Warranty length by product",
+        "text": "Warranty and Repairs > Warranty length by product\nEvery Nimbus product is covered against manufacturing defects, counted from the delivery date. The Nimbus Glide Wireless Mouse (PRD-001) has a 1-year warranty. The Nimbus Forge Mechanical Keyboard (PRD-002) has a 2-year warranty. The Nimbus Dock USB-C Hub (PRD-003) has a 1-year warranty.",
+        "chunk_id": 45,
+        "score": 0.3265248964525997
+      }
+    ]
+  },
+  {
+    "query": "I forgot my password and can't log in",
+    "expected_doc": "KB-ACCOUNT",
+    "top_score": 0.6500088541263421,
+    "top_doc": "KB-ACCOUNT",
+    "found_expected_in_top5": true,
+    "matches": [
+      {
+        "doc_id": "KB-ACCOUNT",
+        "section": "Resetting your password",
+        "text": "Account and Billing > Resetting your password\nOn the login page choose Forgot password and enter your email. We send a reset link that is valid for 30 minutes. After 5 failed login attempts, your account is locked for 15 minutes. If the reset email does not arrive, check your spam folder before requesting another one.",
+        "chunk_id": 0,
+        "score": 0.6500088541263421
+      },
+      {
+        "doc_id": "KB-ACCOUNT",
+        "section": "Changing your email address",
+        "text": "Account and Billing > Changing your email address\nOpen Settings, then Profile, and enter the new email address. We send a 6-digit verification code to both the old and the new address, and the change takes effect only after you enter the codes. If you no longer have access to your old email, contact support and be ready to confirm your order ID and the last 4 digits of your payment card.",
+        "chunk_id": 1,
+        "score": 0.31757620094288636
+      },
+      {
+        "doc_id": "KB-TROUBLESHOOT",
+        "section": "Mouse: factory reset",
+        "text": "Product Troubleshooting > Mouse: factory reset\nIf the mouse behaves erratically, hold the left button, right button, and scroll wheel together for 10 seconds until the LED flashes white. This removes all Bluetooth pairings, so you will need to pair the mouse again afterwards.",
+        "chunk_id": 14,
+        "score": 0.31533551918652797
+      },
+      {
+        "doc_id": "KB-WARRANTY",
+        "section": "How to make a warranty claim",
+        "text": "Warranty and Repairs > How to make a warranty claim\nEmail support with your order ID and photos or a short video showing the problem. We reply within 2 business days. A support agent may ask you to try basic troubleshooting first. Warranty claims are not limited by the return window, so you can claim long after 30 days as long as the product is still under warranty.",
+        "chunk_id": 48,
+        "score": 0.2917056624294531
+      },
+      {
+        "doc_id": "KB-RETURNS",
+        "section": "How to start a return",
+        "text": "Returns and Refunds > How to start a return\nOpen the order in your account, choose Request return, and select a reason. You will receive a return authorization (RMA) number and a prepaid shipping label by email. Write the RMA number on the box. Returns sent without an RMA number can take up to 10 extra business days to process.",
+        "chunk_id": 25,
+        "score": 0.2904653360181713
+      }
+    ]
+  },
+  {
+    "query": "The mouse cursor keeps stuttering",
+    "expected_doc": "KB-TROUBLESHOOT",
+    "top_score": 0.7135866700560152,
+    "top_doc": "KB-TROUBLESHOOT",
+    "found_expected_in_top5": true,
+    "matches": [
+      {
+        "doc_id": "KB-TROUBLESHOOT",
+        "section": "Mouse: cursor lag or dropouts",
+        "text": "Product Troubleshooting > Mouse: cursor lag or dropouts\nIf the cursor stutters when using the dongle, move the dongle to a USB port closer to the mouse and away from USB 3.0 devices and external drives, which can cause interference. A short USB extension cable often fixes it. You can also switch to Bluetooth mode if the dongle keeps failing.",
+        "chunk_id": 12,
+        "score": 0.7135866700560152
+      },
+      {
+        "doc_id": "KB-TROUBLESHOOT",
+        "section": "Mouse: factory reset",
+        "text": "Product Troubleshooting > Mouse: factory reset\nIf the mouse behaves erratically, hold the left button, right button, and scroll wheel together for 10 seconds until the LED flashes white. This removes all Bluetooth pairings, so you will need to pair the mouse again afterwards.",
+        "chunk_id": 14,
+        "score": 0.5253446059689669
+      },
+      {
+        "doc_id": "KB-TROUBLESHOOT",
+        "section": "Mouse: battery",
+        "text": "Product Troubleshooting > Mouse: battery\nThe mouse uses one AA battery, which typically lasts about 12 months. A red blinking LED means the battery is low. A battery included in the box is covered by the warranty for 6 months only.",
+        "chunk_id": 13,
+        "score": 0.37144690360798865
+      },
+      {
+        "doc_id": "KB-TROUBLESHOOT",
+        "section": "Mouse: pairing over Bluetooth",
+        "text": "Product Troubleshooting > Mouse: pairing over Bluetooth\nThe Nimbus Glide Wireless Mouse (PRD-001) supports Bluetooth 5.0 and a 2.4 GHz USB dongle. To pair over Bluetooth, hold the pairing button on the underside for 3 seconds until the LED blinks blue, then choose \"Glide Mouse\" in your computer's Bluetooth settings.",
+        "chunk_id": 11,
+        "score": 0.35544754664527306
+      },
+      {
+        "doc_id": "KB-WARRANTY",
+        "section": "What the warranty covers",
+        "text": "Warranty and Repairs > What the warranty covers\nThe warranty covers manufacturing defects such as a dead sensor or scroll wheel on the mouse, switches or keys that stop registering on the keyboard, and ports that stop working on the hub. Batteries that come with a product are covered for 6 months only.",
+        "chunk_id": 46,
+        "score": 0.3259147653887453
+      }
+    ]
+  },
+  {
+    "query": "What is the capital of France?",
+    "expected_doc": null,
+    "top_score": 0.15989444872740124,
+    "top_doc": "KB-SHIPPING",
+    "found_expected_in_top5": false,
+    "matches": [
+      {
+        "doc_id": "KB-SHIPPING",
+        "section": "Changing the delivery address",
+        "text": "Shipping Policy > Changing the delivery address\nYou can change the delivery address only while the order status is \"processing\". Once the status is \"shipped\", we cannot change the address, and you would need to contact the carrier directly to arrange a redirect. To change an address, open the order in your account and choose Edit address.",
+        "chunk_id": 37,
+        "score": 0.15989444872740124
+      },
+      {
+        "doc_id": "KB-WARRANTY",
+        "section": "What is not covered",
+        "text": "Warranty and Repairs > What is not covered\nThe warranty does not cover liquid damage, drops or crushing, damage from repairs done by anyone other than Nimbus, normal wear such as shiny keycaps, or loss and theft. Damage caused by using a power adapter that is not rated for the product is also excluded.",
+        "chunk_id": 47,
+        "score": 0.15896940874336413
+      },
+      {
+        "doc_id": "KB-SHIPPING",
+        "section": "Tracking your order",
+        "text": "Shipping Policy > Tracking your order\nYou will receive an email with a tracking number within 24 hours after your order ships. Tracking updates from the carrier can lag by up to 12 hours, so a package may look stuck for half a day even when it is moving. You can also see tracking in your account under Orders.",
+        "chunk_id": 36,
+        "score": 0.14117923453534598
+      },
+      {
+        "doc_id": "KB-RETURNS",
+        "section": "Return window",
+        "text": "Returns and Refunds > Return window\nYou can return most items within 30 days of the delivery date. Gold members have 45 days and Premium members have 60 days. The window is counted from the date the carrier marks the package as delivered, not from the date you ordered.",
+        "chunk_id": 23,
+        "score": 0.1310879020430128
+      },
+      {
+        "doc_id": "KB-TROUBLESHOOT",
+        "section": "Mouse: factory reset",
+        "text": "Product Troubleshooting > Mouse: factory reset\nIf the mouse behaves erratically, hold the left button, right button, and scroll wheel together for 10 seconds until the LED flashes white. This removes all Bluetooth pairings, so you will need to pair the mouse again afterwards.",
+        "chunk_id": 14,
+        "score": 0.12683572180167127
+      }
+    ]
+  }
+]

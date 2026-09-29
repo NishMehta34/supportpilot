@@ -46,3 +46,11 @@ Tests use `FakeAdapter` (app/model_adapter.py), a scripted stand-in for the real
 - Design document: `docs/rag-design.md` (includes the architecture diagram)
 - Knowledge base (5 documents): `data/kb/`
 - Preview the chunking: `python3 scripts/preview_chunks.py`
+
+## How to run Day 7
+1. `ollama pull embeddinggemma` (one-time)
+2. `source .venv/bin/activate`
+3. `pytest` (no model needed)
+4. `python3 scripts/embed_kb.py` (embeds 20 chunks; Ollama must be running)
+5. `python3 scripts/similarity_demo.py` (tests 5+ queries against those chunks)
+6. Results: `artifacts/day07_embeddings.json`, `artifacts/day07_notes.json`, `artifacts/day07_notes.md`
