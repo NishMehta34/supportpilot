@@ -75,3 +75,11 @@ Schema: `db/init.sql`. Every chunk carries a `tenant_id`; every search filters b
 
 Every answer is grounded in retrieved evidence and cites its sources as [S1], [S2].
 If confidence is too low, the API says so instead of guessing.
+
+## How to run Day 10
+1. `docker compose up -d` and Ollama running
+2. `pytest` (115 tests, no model needed)
+3. `python3 scripts/run_eval.py` runs the 30-case benchmark
+4. Results: `artifacts/day10_scorecard.json`, writeup: `docs/day10-failures.md`
+
+Baseline (fill in from your run): correctness __, hit@5 __, citation rate __.
