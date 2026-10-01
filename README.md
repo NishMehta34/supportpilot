@@ -93,3 +93,13 @@ Baseline (fill in from your run): correctness __, hit@5 __, citation rate __.
 5. Traces: `artifacts/day11_traces/`
 
 Alfred reuses the exact same `run_agent` loop from Day 4, with a different toolbox.
+
+## How to run Day 12
+1. `source .venv/bin/activate`
+2. `pytest` (126 tests)
+3. `python3 scripts/raw_version.py`
+4. `pip install "smolagents[litellm]"` then `python3 scripts/smolagents_version.py`
+5. `python3 scripts/mini_agent_version.py`
+6. Comparison: `docs/day12-comparison.md`
+
+Decision: SupportPilot keeps the raw loop for the rest of the sprint (see comparison doc for why).
