@@ -1,0 +1,342 @@
+[
+  {
+    "question": "How long do I have to return an item if I'm a Gold member?",
+    "answer": "As a Gold member, you have 45 days to return an item [S2].",
+    "sources": [
+      {
+        "source_id": "S2",
+        "doc_id": "KB-ACCOUNT",
+        "section": "Tier benefits",
+        "snippet": "Account and Billing > Tier benefits\nStandard members get 30-day returns and email support within 48 hours. Gold members get 45-day returns, free Express shipping, and email support within 12 hours. Pr",
+        "score": 0.6760276724009903
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "Can I change my delivery address after my order has shipped?",
+    "answer": "No, you cannot change the delivery address after your order has shipped. Once the order status is \"shipped\", we cannot change the address, and you would need to contact the carrier directly to arrange a redirect [S1].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-SHIPPING",
+        "section": "Changing the delivery address",
+        "snippet": "Shipping Policy > Changing the delivery address\nYou can change the delivery address only while the order status is \"processing\". Once the status is \"shipped\", we cannot change the address, and you wou",
+        "score": 0.8134625220529904
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "What's the warranty on the Nimbus Forge Mechanical Keyboard?",
+    "answer": "The Nimbus Forge Mechanical Keyboard (PRD-002) has a 2-year warranty [S1].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-WARRANTY",
+        "section": "Warranty length by product",
+        "snippet": "Warranty and Repairs > Warranty length by product\nEvery Nimbus product is covered against manufacturing defects, counted from the delivery date. The Nimbus Glide Wireless Mouse (PRD-001) has a 1-year ",
+        "score": 0.7404347414685987
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "How do I reset my password?",
+    "answer": "On the login page, choose \"Forgot password\" and enter your email. We send a reset link that is valid for 30 minutes [S1].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-ACCOUNT",
+        "section": "Resetting your password",
+        "snippet": "Account and Billing > Resetting your password\nOn the login page choose Forgot password and enter your email. We send a reset link that is valid for 30 minutes. After 5 failed login attempts, your acco",
+        "score": 0.6210115489329351
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "My mouse cursor keeps stuttering, what can I do?",
+    "answer": "If the cursor stutters when using the dongle, move the dongle to a USB port closer to the mouse and away from USB 3.0 devices and external drives, which can cause interference. A short USB extension cable often fixes it. You can also switch to Bluetooth mode if the dongle keeps failing [S1].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-TROUBLESHOOT",
+        "section": "Mouse: cursor lag or dropouts",
+        "snippet": "Product Troubleshooting > Mouse: cursor lag or dropouts\nIf the cursor stutters when using the dongle, move the dongle to a USB port closer to the mouse and away from USB 3.0 devices and external drive",
+        "score": 0.7401543391026983
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "Do you ship internationally?",
+    "answer": "Yes, we ship internationally to Canada and the United Kingdom only [S1].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-SHIPPING",
+        "section": "International shipping",
+        "snippet": "Shipping Policy > International shipping\nWe ship outside the United States to Canada and the United Kingdom only. International orders use a flat $19.99 rate and take 8\u201314 business days. Customers are",
+        "score": 0.6653211911118625
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "How much does express shipping cost?",
+    "answer": "Express shipping costs $12.99 [S1].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-SHIPPING",
+        "section": "Shipping options and prices",
+        "snippet": "Shipping Policy > Shipping options and prices\nWe offer two shipping speeds within the United States. Standard shipping takes 5\u20137 business days and costs $4.99, or is free on orders of $50 or more. Exp",
+        "score": 0.6408936763343348
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "What happens if a package is lost?",
+    "answer": "If a package is lost, you can choose a free replacement or a full refund including shipping. This occurs after a carrier investigation is opened once the package is confirmed lost [S1].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-SHIPPING",
+        "section": "Delayed or lost packages",
+        "snippet": "Shipping Policy > Delayed or lost packages\nIf a Standard order has not arrived 10 business days after the ship date, or an Express order 5 business days after the ship date, contact support with your ",
+        "score": 0.5933524062264595
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "Can I return an item without the original packaging?",
+    "answer": "Yes, you can return an item without the original packaging, but the item should still be unused or like new and include all accessories. If the item is electronics and has been opened, a 15% restocking fee applies unless the item is defective [S2].",
+    "sources": [
+      {
+        "source_id": "S2",
+        "doc_id": "KB-RETURNS",
+        "section": "Condition of returned items",
+        "snippet": "Returns and Refunds > Condition of returned items\nReturned items should be unused or like new and include the original packaging and all accessories. Opened electronics are accepted if they are not da",
+        "score": 0.5772230945027893
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "How long does a refund take to show up?",
+    "answer": "Refunds are issued to the original payment method within 5\u20137 business days after our warehouse receives and inspects the returned item. Your bank or card issuer may need up to 3 more business days to show the refund [S1].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-RETURNS",
+        "section": "Refund timing",
+        "snippet": "Returns and Refunds > Refund timing\nRefunds are issued to the original payment method within 5\u20137 business days after our warehouse receives and inspects the returned item. Your bank or card issuer may",
+        "score": 0.6709892757516388
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "What is the return window for a Standard member?",
+    "answer": "The return window for a Standard member is 30 days from the date the carrier marks the package as delivered [S2].",
+    "sources": [
+      {
+        "source_id": "S2",
+        "doc_id": "KB-RETURNS",
+        "section": "Return window",
+        "snippet": "Returns and Refunds > Return window\nYou can return most items within 30 days of the delivery date. Gold members have 45 days and Premium members have 60 days. The window is counted from the date the c",
+        "score": 0.5709095514901908
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "How do I claim a warranty replacement?",
+    "answer": "To claim a warranty replacement, email support with your order ID and photos or a short video showing the problem. We reply within 2 business days. A support agent may ask you to try basic troubleshooting first. If your claim is approved, we ship a replacement within 2 business days. You must send the defective unit back within 14 days using the prepaid label we provide. If the defective unit is not returned within 14 days, we charge the price of the replacement to your payment method [S1][S4].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-WARRANTY",
+        "section": "How to make a warranty claim",
+        "snippet": "Warranty and Repairs > How to make a warranty claim\nEmail support with your order ID and photos or a short video showing the problem. We reply within 2 business days. A support agent may ask you to tr",
+        "score": 0.6657079456522415
+      },
+      {
+        "source_id": "S4",
+        "doc_id": "KB-WARRANTY",
+        "section": "Replacement process",
+        "snippet": "Warranty and Repairs > Replacement process\nIf your claim is approved, we ship a replacement within 2 business days. You must send the defective unit back within 14 days using the prepaid label we prov",
+        "score": 0.5639602557503847
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "Is there a restocking fee for opened electronics?",
+    "answer": "Yes, there is a restocking fee for opened electronics. A 15% restocking fee applies to opened electronics unless the item is defective [S1].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-RETURNS",
+        "section": "Condition of returned items",
+        "snippet": "Returns and Refunds > Condition of returned items\nReturned items should be unused or like new and include the original packaging and all accessories. Opened electronics are accepted if they are not da",
+        "score": 0.7357598762440726
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "How do I change my account email address?",
+    "answer": "To change your account email address, open Settings, then Profile, and enter the new email address. We send a 6-digit verification code to both the old and the new address, and the change takes effect only after you enter the codes [S1].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-ACCOUNT",
+        "section": "Changing your email address",
+        "snippet": "Account and Billing > Changing your email address\nOpen Settings, then Profile, and enter the new email address. We send a 6-digit verification code to both the old and the new address, and the change ",
+        "score": 0.7416741887692505
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "What payment methods do you accept?",
+    "answer": "We accept Visa, Mastercard, American Express, PayPal, and Apple Pay. We do not accept cash, cheques, cryptocurrency, or gift cards from other companies [S1].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-ACCOUNT",
+        "section": "Accepted payment methods",
+        "snippet": "Account and Billing > Accepted payment methods\nWe accept Visa, Mastercard, American Express, PayPal, and Apple Pay. We do not accept cash, cheques, cryptocurrency, or gift cards from other companies.",
+        "score": 0.6878212819685826
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "How do I pair the mouse over Bluetooth?",
+    "answer": "To pair the mouse over Bluetooth, hold the pairing button on the underside for 3 seconds until the LED blinks blue, then choose \"Glide Mouse\" in your computer's Bluetooth settings [S1].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-TROUBLESHOOT",
+        "section": "Mouse: pairing over Bluetooth",
+        "snippet": "Product Troubleshooting > Mouse: pairing over Bluetooth\nThe Nimbus Glide Wireless Mouse (PRD-001) supports Bluetooth 5.0 and a 2.4 GHz USB dongle. To pair over Bluetooth, hold the pairing button on th",
+        "score": 0.7112286514776457
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "What's the difference between Gold and Premium membership?",
+    "answer": "The difference between Gold and Premium membership includes the return window, support options, and shipping benefits. Gold members have a 45-day return window, while Premium members have a 60-day return window [S3]. Gold members receive email support within 12 hours, whereas Premium members get access to phone support [S2]. Additionally, Premium members enjoy free Express shipping plus priority handling, while Gold members only get free Express shipping [S5]. Premium membership is a paid tier costing $99 per year, while Gold membership is unlocked automatically after spending $500 in a 12-month period [S1].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-ACCOUNT",
+        "section": "Membership tiers",
+        "snippet": "Account and Billing > Membership tiers\nThere are three tiers. Standard is the default for every account. Gold is unlocked automatically after you spend $500 in a 12-month period. Premium is a paid mem",
+        "score": 0.6633411663728668
+      },
+      {
+        "source_id": "S2",
+        "doc_id": "KB-ACCOUNT",
+        "section": "Tier benefits",
+        "snippet": "Account and Billing > Tier benefits\nStandard members get 30-day returns and email support within 48 hours. Gold members get 45-day returns, free Express shipping, and email support within 12 hours. Pr",
+        "score": 0.6103041323204014
+      },
+      {
+        "source_id": "S3",
+        "doc_id": "KB-RETURNS",
+        "section": "Return window",
+        "snippet": "Returns and Refunds > Return window\nYou can return most items within 30 days of the delivery date. Gold members have 45 days and Premium members have 60 days. The window is counted from the date the c",
+        "score": 0.49873858757929357
+      },
+      {
+        "source_id": "S5",
+        "doc_id": "KB-SHIPPING",
+        "section": "Shipping options and prices",
+        "snippet": "Shipping Policy > Shipping options and prices\nWe offer two shipping speeds within the United States. Standard shipping takes 5\u20137 business days and costs $4.99, or is free on orders of $50 or more. Exp",
+        "score": 0.47732443833828386
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "I was charged twice for one order, what do I do?",
+    "answer": "If you were charged twice for one order, contact support with the order ID and we will refund the extra charge within 5 business days [S1].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-ACCOUNT",
+        "section": "Being charged twice",
+        "snippet": "Account and Billing > Being charged twice\nWhen you place an order, your bank may show a temporary pending authorization as well as the final charge. Duplicate pending authorizations disappear on their",
+        "score": 0.7881636872096939
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "Can the USB-C hub charge my laptop?",
+    "answer": "The hub supports up to 100W USB-C power passthrough, but only if you connect a 100W or higher power adapter to the hub's charging port [S1].",
+    "sources": [
+      {
+        "source_id": "S1",
+        "doc_id": "KB-TROUBLESHOOT",
+        "section": "Hub: charging passthrough",
+        "snippet": "Product Troubleshooting > Hub: charging passthrough\nThe hub supports up to 100W USB-C power passthrough, but only if you connect a 100W or higher power adapter to the hub's charging port. A lower rate",
+        "score": 0.6776081929454184
+      }
+    ],
+    "not_found": false,
+    "invalid_citations": [],
+    "acceptable": true
+  },
+  {
+    "question": "What's the weather like today?",
+    "answer": "I couldn't find that in our knowledge base.",
+    "sources": [],
+    "not_found": true,
+    "invalid_citations": [],
+    "acceptable": true
+  }
+]

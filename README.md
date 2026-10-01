@@ -64,3 +64,14 @@ Tests use `FakeAdapter` (app/model_adapter.py), a scripted stand-in for the real
 6. `python3 scripts/search_db.py "your question"` searches (add `--tenant acme` to scope it)
 
 Schema: `db/init.sql`. Every chunk carries a `tenant_id`; every search filters by it.
+
+## How to run Day 9
+1. `docker compose up -d` (database) and Ollama running
+2. `pip install -r requirements.txt`
+3. `pytest` (95 tests, no model or database needed)
+4. `uvicorn app.main:app --reload` starts the API on http://localhost:8000
+5. Try it: `http://localhost:8000/docs`, or `python3 scripts/ask_demo.py` for the 20-question benchmark
+6. Results: `artifacts/day09.json`
+
+Every answer is grounded in retrieved evidence and cites its sources as [S1], [S2].
+If confidence is too low, the API says so instead of guessing.
