@@ -19,8 +19,14 @@ SYSTEM_PROMPT = (
 )
 
 
-def run_agent(task, chat_fn=ollama_chat, max_steps=MAX_STEPS):
-    """Run the loop. Always returns a result with a stop_reason and a full trace."""
+def run_agent(task, chat_fn=ollama_chat, max_steps=MAX_STEPS,
+              tool_schemas=AGENT_TOOL_SCHEMAS, execute_tool=execute_agent_tool):
+    """The loop itself doesn't care WHICH tools it's given (SupportPilot's order
+    tools, Alfred's party-planning tools, anything). That's what makes it a
+    reusable primitive rather than a one-off script. Day 11 proves this by
+    reusing the exact same loop with a completely different toolbox.
+
+    Always returns a result with a stop_reason and a full trace."""
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user", "content": task},
@@ -44,7 +50,7 @@ def run_agent(task, chat_fn=ollama_chat, max_steps=MAX_STEPS):
     step = 0
     for step in range(1, max_steps + 1):
         # THINK: the model decides what to do next.
-        reply = chat_fn(messages, AGENT_TOOL_SCHEMAS)
+        reply = chat_fn(messages, tool_schemas)
         messages.append(reply)
         calls = reply.get("tool_calls") or []
 
@@ -64,7 +70,7 @@ def run_agent(task, chat_fn=ollama_chat, max_steps=MAX_STEPS):
                 result = {"error": "You already made this exact call. Use the earlier result."}
             else:
                 seen_calls.add(signature)
-                result = execute_agent_tool(name, arguments)
+                result = execute_tool(name, arguments)
 
             trace.append({
                 "step": step, "type": "tool_call", "tool": name, "arguments": arguments,

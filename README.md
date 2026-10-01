@@ -83,3 +83,13 @@ If confidence is too low, the API says so instead of guessing.
 4. Results: `artifacts/day10_scorecard.json`, writeup: `docs/day10-failures.md`
 
 Baseline (fill in from your run): correctness __, hit@5 __, citation rate __.
+
+## How to run Day 11
+1. `source .venv/bin/activate`
+2. `pytest` (121 tests, no model needed)
+3. `python3 scripts/alfred_demo.py` (Ollama must be running)
+4. Notes: `docs/day11-notes.md`, state diagram: `docs/day11-state-diagram.md`,
+   framework comparison: `docs/day11-primitive-vs-framework.md`
+5. Traces: `artifacts/day11_traces/`
+
+Alfred reuses the exact same `run_agent` loop from Day 4, with a different toolbox.

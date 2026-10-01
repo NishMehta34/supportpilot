@@ -1,0 +1,30 @@
+{
+  "task": "Selina Kyle is on the guest list. What's her relation to the host, and does the menu need to account for anything about her?",
+  "stop_reason": "final_answer",
+  "final_answer": "Selina Kyle is the guest of honour, and the menu needs to account for her vegetarian dietary preference. Additionally, she has a plus-one.",
+  "steps_used": 2,
+  "max_steps": 6,
+  "total_ms": 1635,
+  "trace": [
+    {
+      "step": 1,
+      "type": "tool_call",
+      "tool": "check_guest",
+      "arguments": {
+        "name": "Selina Kyle"
+      },
+      "result": {
+        "name": "Selina Kyle",
+        "relation": "guest of honour",
+        "dietary": "vegetarian",
+        "plus_one": true
+      },
+      "elapsed_ms": 0.01
+    },
+    {
+      "step": 2,
+      "type": "final_answer",
+      "content": "Selina Kyle is the guest of honour, and the menu needs to account for her vegetarian dietary preference. Additionally, she has a plus-one."
+    }
+  ]
+}
