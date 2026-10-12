@@ -227,3 +227,7 @@ Day 23 adds `Dockerfile`, `docker-compose.day23.yml`, `.dockerignore`, `.env.day
 ## Day 24 — Agent regression benchmark
 
 Run `python3 -m pytest -q tests/test_day24_evals.py` and `python3 -m evals.run`. The default run is **synthetic fixture validation**, not a model quality benchmark. JSON output: `artifacts/day24_report.json`. The live mode `python3 -m evals.run --mode live` requires Ollama/pgvector and currently fails the gate until the six tool cases are integrated. See `docs/day24-evaluation.md`.
+
+## Day 25 — AI-assisted engineering review
+
+Focused PR exercise: reject invalid (negative, NaN, or infinite) latency measurements in the Day 24 evaluation runner, preventing misleading benchmark reports. The implementation is in `evals/run.py`; regression tests are in `tests/test_day25_eval_hardening.py`. Follow `docs/day25-ai-coding-review.md` for the AI coding prompt, human review checklist, tests, and PR description. The benchmark fixture is synthetic; real agent evaluation remains a separate task.
