@@ -223,3 +223,7 @@ Run `uvicorn app.day21_api:app --reload`, then open http://127.0.0.1:8000/docs. 
 ## Day 23 — Docker Compose stack
 
 Day 23 adds `Dockerfile`, `docker-compose.day23.yml`, `.dockerignore`, `.env.day23.example`, a smoke-check script, and deployment tests. On macOS install Docker Desktop, then follow `docs/day23-docker.md` to create `.env`, build, and start the API + Postgres/pgvector + Ollama services. Visit http://localhost:8000/docs. The API is the Day 22 scaffold, not yet a fully wired Ollama/pgvector application. Never commit `.env` or use the default empty login account registry in production.
+
+## Day 24 — Agent regression benchmark
+
+Run `python3 -m pytest -q tests/test_day24_evals.py` and `python3 -m evals.run`. The default run is **synthetic fixture validation**, not a model quality benchmark. JSON output: `artifacts/day24_report.json`. The live mode `python3 -m evals.run --mode live` requires Ollama/pgvector and currently fails the gate until the six tool cases are integrated. See `docs/day24-evaluation.md`.

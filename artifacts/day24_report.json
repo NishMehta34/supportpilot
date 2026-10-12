@@ -1,0 +1,291 @@
+{
+  "mode": "fixture",
+  "summary": {
+    "total_cases": 30,
+    "evaluated_cases": 30,
+    "unsupported_cases": 0,
+    "routing_accuracy": 1.0,
+    "retrieval_hit_at_5": 1.0,
+    "citation_rate": 1.0,
+    "tool_success": 1.0,
+    "latency_ms": {
+      "median": 0.0,
+      "p95": 0.0
+    },
+    "failed_ids": []
+  },
+  "gate_passed": true,
+  "gate_failures": [],
+  "entries": [
+    {
+      "id": "E01",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "E02",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "E03",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "E04",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "E05",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "E06",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "E07",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "E08",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "E09",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "E10",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "M01",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "M02",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "M03",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "M04",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "M05",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "M06",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": true,
+      "citation_correct": true,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "O01",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": null,
+      "citation_correct": null,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "O02",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": null,
+      "citation_correct": null,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "O03",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": null,
+      "citation_correct": null,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "O04",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": null,
+      "citation_correct": null,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "O05",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": null,
+      "citation_correct": null,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "O06",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": null,
+      "citation_correct": null,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "T01",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": null,
+      "citation_correct": null,
+      "tool_success": true,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "T02",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": null,
+      "citation_correct": null,
+      "tool_success": true,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "T03",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": null,
+      "citation_correct": null,
+      "tool_success": true,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "T04",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": null,
+      "citation_correct": null,
+      "tool_success": true,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "T05",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": null,
+      "citation_correct": null,
+      "tool_success": true,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "T06",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": null,
+      "citation_correct": null,
+      "tool_success": true,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "D01",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": null,
+      "citation_correct": null,
+      "tool_success": null,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "D02",
+      "supported": true,
+      "routing_correct": true,
+      "retrieval_hit_at_5": null,
+      "citation_correct": null,
+      "tool_success": null,
+      "latency_ms": 0.0
+    }
+  ]
+}
