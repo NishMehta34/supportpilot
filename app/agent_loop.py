@@ -20,7 +20,8 @@ SYSTEM_PROMPT = (
 
 
 def run_agent(task, chat_fn=ollama_chat, max_steps=MAX_STEPS,
-              tool_schemas=AGENT_TOOL_SCHEMAS, execute_tool=execute_agent_tool):
+              tool_schemas=AGENT_TOOL_SCHEMAS, execute_tool=execute_agent_tool,
+              system_prompt=None):
     """The loop itself doesn't care WHICH tools it's given (SupportPilot's order
     tools, Alfred's party-planning tools, anything). That's what makes it a
     reusable primitive rather than a one-off script. Day 11 proves this by
@@ -28,7 +29,7 @@ def run_agent(task, chat_fn=ollama_chat, max_steps=MAX_STEPS,
 
     Always returns a result with a stop_reason and a full trace."""
     messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "system", "content": SYSTEM_PROMPT if system_prompt is None else system_prompt},
         {"role": "user", "content": task},
     ]
     trace = []

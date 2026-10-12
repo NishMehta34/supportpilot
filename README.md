@@ -103,3 +103,12 @@ Alfred reuses the exact same `run_agent` loop from Day 4, with a different toolb
 6. Comparison: `docs/day12-comparison.md`
 
 Decision: SupportPilot keeps the raw loop for the rest of the sprint (see comparison doc for why).
+
+## How to run Day 13
+1. `source .venv/bin/activate`
+2. `pytest` (167 tests, no model needed)
+3. `python3 scripts/support_demo.py` (Ollama running; database optional)
+4. Design and threat table: `docs/day13-write-safety.md`; results: `artifacts/day13.json`
+
+Rule: the AI may inspect and draft; only a human may confirm. Enforced in code
+(app/support_tools.py), not in the prompt.
