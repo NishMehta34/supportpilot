@@ -205,3 +205,7 @@ cat artifacts/day20-budget.json
 ```
 
 See `docs/day20-guardrails.md` for threat model and limitations. In particular, Python thread timeouts are not hard cancellation, and this wrapper is not yet wired into all LangGraph paths.
+
+## Day 21 — Modular FastAPI service
+
+Run `uvicorn app.day21_api:app --reload`, then open http://127.0.0.1:8000/docs. Endpoints: `/health`, `/chat`, `/threads`, `/documents`, `/tickets`. The new API uses Pydantic contracts, FastAPI dependency injection, application services and a local repository. Tests: `python3 -m pytest -q tests/test_day21_api.py`. Demo: `python3 -m scripts.day21_demo`. **Development scaffold only:** no JWT authentication, no live agent wiring, no document embeddings, and no persistent API repositories yet. Ticket creation remains draft-only. See `docs/day21-service.md`.

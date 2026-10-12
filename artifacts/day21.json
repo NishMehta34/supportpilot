@@ -1,0 +1,16 @@
+{
+  "health": {
+    "status": "ok"
+  },
+  "thread_created": true,
+  "chat_configured": false,
+  "document_created": true,
+  "openapi_paths": [
+    "/chat",
+    "/documents",
+    "/health",
+    "/threads",
+    "/threads/{thread_id}",
+    "/tickets"
+  ]
+}
