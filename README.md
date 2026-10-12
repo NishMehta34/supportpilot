@@ -152,3 +152,14 @@ Evidence:
 
 Safety: The AI cannot confirm or create a ticket
 without the separate human confirmation process.
+## Day 16 — Persistent conversation checkpoints
+
+Install `langgraph-checkpoint-sqlite` and run:
+
+```bash
+python3 -m pytest -q tests/test_conversation_memory.py
+python3 -m scripts.day16_demo
+cat artifacts/day16.json
+```
+
+Design: `docs/day16-memory.md`. The local SQLite file is sensitive and should never be committed. This is thread-scoped short-term memory, not Day 17 long-term user memory.

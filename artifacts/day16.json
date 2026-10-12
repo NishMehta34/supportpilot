@@ -1,0 +1,9 @@
+{
+  "thread_id": "demo-thread",
+  "turns": 3,
+  "after_restart_resolved_question": "Check that order again (referring to order ORD-1001)",
+  "history_entries": 6,
+  "other_thread_isolated": true,
+  "tickets_created": 0,
+  "passed": true
+}
