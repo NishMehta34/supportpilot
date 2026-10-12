@@ -4,3 +4,4 @@ psycopg[binary]
 fastapi
 uvicorn[standard]
 httpx
+langgraph==1.2.14

@@ -1,0 +1,24 @@
+[
+  {
+    "task": "Where is my order?",
+    "events": [
+      "classify",
+      "retrieve",
+      "tool_decision",
+      "answer"
+    ],
+    "route": "answer",
+    "final_answer": "Please provide your order ID so I can look it up."
+  },
+  {
+    "task": "I need a human agent to review this",
+    "events": [
+      "classify",
+      "retrieve",
+      "tool_decision",
+      "escalate"
+    ],
+    "route": "escalate",
+    "final_answer": "This request needs a human support agent. No ticket has been created."
+  }
+]

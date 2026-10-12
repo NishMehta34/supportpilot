@@ -112,3 +112,19 @@ Decision: SupportPilot keeps the raw loop for the rest of the sprint (see compar
 
 Rule: the AI may inspect and draft; only a human may confirm. Enforced in code
 (app/support_tools.py), not in the prompt.
+
+## Day 14 — LangGraph workflow
+
+The support workflow uses LangGraph with explicit state and routing:
+
+START -> classify -> retrieve -> tool_decision
+-> answer/escalate -> END
+
+Run:
+- `python3 -m pytest -q`
+- `python3 -m scripts.day14_demo`
+
+Design: `docs/day14-langgraph.md`
+Evidence: `artifacts/day14.json`
+
+The Day 13 human-confirmation boundary is preserved.
