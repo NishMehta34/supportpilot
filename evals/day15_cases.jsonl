@@ -1,0 +1,20 @@
+{"id":"D15-01","task":"Where is order ORD-1001?","expected_route":"answer","expected_tool":"get_order"}
+{"id":"D15-02","task":"Track ORD-1002","expected_route":"answer","expected_tool":"get_order"}
+{"id":"D15-03","task":"Status of ORD-1003","expected_route":"answer","expected_tool":"get_order"}
+{"id":"D15-04","task":"Look up ORD-1004","expected_route":"answer","expected_tool":"get_order"}
+{"id":"D15-05","task":"Please check ORD-1005","expected_route":"answer","expected_tool":"get_order"}
+{"id":"D15-06","task":"Find customer CUS-001","expected_route":"answer","expected_tool":"get_customer"}
+{"id":"D15-07","task":"Look up CUS-002","expected_route":"answer","expected_tool":"get_customer"}
+{"id":"D15-08","task":"Customer details CUS-003","expected_route":"answer","expected_tool":"get_customer"}
+{"id":"D15-09","task":"Who is CUS-004?","expected_route":"answer","expected_tool":"get_customer"}
+{"id":"D15-10","task":"Find CUS-005","expected_route":"answer","expected_tool":"get_customer"}
+{"id":"D15-11","task":"What is the return policy?","expected_route":"answer","expected_tool":"search_kb"}
+{"id":"D15-12","task":"Explain warranty coverage","expected_route":"answer","expected_tool":"search_kb"}
+{"id":"D15-13","task":"How long is shipping?","expected_route":"answer","expected_tool":"search_kb"}
+{"id":"D15-14","task":"What is the refund policy?","expected_route":"answer","expected_tool":"search_kb"}
+{"id":"D15-15","task":"How do I troubleshoot charging?","expected_route":"answer","expected_tool":"search_kb"}
+{"id":"D15-16","task":"Create a ticket for damaged product for CUS-001","expected_route":"answer","expected_tool":"create_ticket"}
+{"id":"D15-17","task":"Open ticket for broken screen CUS-002","expected_route":"answer","expected_tool":"create_ticket"}
+{"id":"D15-18","task":"I need a human agent","expected_route":"escalate","expected_tool":null}
+{"id":"D15-19","task":"Please escalate my complaint","expected_route":"escalate","expected_tool":null}
+{"id":"D15-20","task":"Connect me with a supervisor","expected_route":"escalate","expected_tool":null}

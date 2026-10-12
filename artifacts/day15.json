@@ -1,0 +1,58 @@
+[
+  {
+    "task": "Check order ORD-1001",
+    "events": [
+      "classify",
+      "retrieve",
+      "tool_decision",
+      "answer"
+    ],
+    "route": "answer",
+    "answer": "I checked the available information.",
+    "failure": null,
+    "tool_calls": [
+      "get_order"
+    ]
+  },
+  {
+    "task": "Find customer CUS-001",
+    "events": [
+      "classify",
+      "retrieve",
+      "tool_decision",
+      "answer"
+    ],
+    "route": "answer",
+    "answer": "I checked the available information.",
+    "failure": null,
+    "tool_calls": [
+      "get_customer"
+    ]
+  },
+  {
+    "task": "What is the warranty policy?",
+    "events": [
+      "classify",
+      "retrieve",
+      "tool_decision",
+      "answer"
+    ],
+    "route": "answer",
+    "answer": "Please provide an order or customer ID.",
+    "failure": null,
+    "tool_calls": []
+  },
+  {
+    "task": "I want a human agent",
+    "events": [
+      "classify",
+      "retrieve",
+      "tool_decision",
+      "escalate"
+    ],
+    "route": "escalate",
+    "answer": "A human support agent is needed. No ticket has been created.",
+    "failure": null,
+    "tool_calls": []
+  }
+]

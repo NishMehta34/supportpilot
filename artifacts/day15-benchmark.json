@@ -1,0 +1,243 @@
+{
+  "benchmark": "day15 scripted routing (not model-quality evaluation)",
+  "passed": 20,
+  "total": 20,
+  "routing_accuracy": 1.0,
+  "results": [
+    {
+      "id": "D15-01",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "get_order"
+      ],
+      "expected_tool": "get_order",
+      "latency_ms": 2.45,
+      "failure": null
+    },
+    {
+      "id": "D15-02",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "get_order"
+      ],
+      "expected_tool": "get_order",
+      "latency_ms": 0.93,
+      "failure": null
+    },
+    {
+      "id": "D15-03",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "get_order"
+      ],
+      "expected_tool": "get_order",
+      "latency_ms": 0.94,
+      "failure": null
+    },
+    {
+      "id": "D15-04",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "get_order"
+      ],
+      "expected_tool": "get_order",
+      "latency_ms": 0.75,
+      "failure": null
+    },
+    {
+      "id": "D15-05",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "get_order"
+      ],
+      "expected_tool": "get_order",
+      "latency_ms": 0.75,
+      "failure": null
+    },
+    {
+      "id": "D15-06",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "get_customer"
+      ],
+      "expected_tool": "get_customer",
+      "latency_ms": 0.69,
+      "failure": null
+    },
+    {
+      "id": "D15-07",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "get_customer"
+      ],
+      "expected_tool": "get_customer",
+      "latency_ms": 0.68,
+      "failure": null
+    },
+    {
+      "id": "D15-08",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "get_customer"
+      ],
+      "expected_tool": "get_customer",
+      "latency_ms": 0.72,
+      "failure": null
+    },
+    {
+      "id": "D15-09",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "get_customer"
+      ],
+      "expected_tool": "get_customer",
+      "latency_ms": 0.7,
+      "failure": null
+    },
+    {
+      "id": "D15-10",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "get_customer"
+      ],
+      "expected_tool": "get_customer",
+      "latency_ms": 0.68,
+      "failure": null
+    },
+    {
+      "id": "D15-11",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "search_kb"
+      ],
+      "expected_tool": "search_kb",
+      "latency_ms": 0.68,
+      "failure": null
+    },
+    {
+      "id": "D15-12",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "search_kb"
+      ],
+      "expected_tool": "search_kb",
+      "latency_ms": 0.67,
+      "failure": null
+    },
+    {
+      "id": "D15-13",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "search_kb"
+      ],
+      "expected_tool": "search_kb",
+      "latency_ms": 0.68,
+      "failure": null
+    },
+    {
+      "id": "D15-14",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "search_kb"
+      ],
+      "expected_tool": "search_kb",
+      "latency_ms": 0.67,
+      "failure": null
+    },
+    {
+      "id": "D15-15",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "search_kb"
+      ],
+      "expected_tool": "search_kb",
+      "latency_ms": 0.8,
+      "failure": null
+    },
+    {
+      "id": "D15-16",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "create_ticket"
+      ],
+      "expected_tool": "create_ticket",
+      "latency_ms": 0.73,
+      "failure": null
+    },
+    {
+      "id": "D15-17",
+      "passed": true,
+      "route": "answer",
+      "expected_route": "answer",
+      "tools": [
+        "create_ticket"
+      ],
+      "expected_tool": "create_ticket",
+      "latency_ms": 0.92,
+      "failure": null
+    },
+    {
+      "id": "D15-18",
+      "passed": true,
+      "route": "escalate",
+      "expected_route": "escalate",
+      "tools": [],
+      "expected_tool": null,
+      "latency_ms": 0.72,
+      "failure": null
+    },
+    {
+      "id": "D15-19",
+      "passed": true,
+      "route": "escalate",
+      "expected_route": "escalate",
+      "tools": [],
+      "expected_tool": null,
+      "latency_ms": 0.72,
+      "failure": null
+    },
+    {
+      "id": "D15-20",
+      "passed": true,
+      "route": "escalate",
+      "expected_route": "escalate",
+      "tools": [],
+      "expected_tool": null,
+      "latency_ms": 0.68,
+      "failure": null
+    }
+  ],
+  "failures": []
+}

@@ -128,3 +128,27 @@ Design: `docs/day14-langgraph.md`
 Evidence: `artifacts/day14.json`
 
 The Day 13 human-confirmation boundary is preserved.
+
+## Day 15 — Agentic RAG
+
+SupportPilot combines LangGraph orchestration with
+model-selected business tools.
+
+Tools:
+- search_kb
+- get_order
+- get_customer
+- create_ticket (draft only)
+
+Run:
+- python3 -m pytest -q
+- python3 -m scripts.day15_demo
+- python3 -m evals.day15_run
+
+Evidence:
+- artifacts/day15.json
+- artifacts/day15-benchmark.json
+- docs/day15-agentic-rag.md
+
+Safety: The AI cannot confirm or create a ticket
+without the separate human confirmation process.
