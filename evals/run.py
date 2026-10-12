@@ -6,6 +6,7 @@ tool cases require a separately supplied integration and are marked unsupported.
 """
 import argparse
 import json
+import math
 import statistics
 import sys
 import time
@@ -64,9 +65,12 @@ def evaluate(cases, adapter):
             hit=bool(expected_docs & retrieved) if expected_docs else None
             citation_ok=bool(citations & expected_docs) if case.get("expected_citation") else None
             tool_ok=(out.get("tool")==case["expected_tool"] and out.get("tool_ok") is True) if case.get("expected_tool") else None
+            latency = float(out.get("latency_ms", 0))
+            if not math.isfinite(latency) or latency < 0:
+                raise ValueError("Invalid latency measurement")
             entries.append({"id":case["id"],"supported":True,"routing_correct":route_ok,
                 "retrieval_hit_at_5":hit,"citation_correct":citation_ok,"tool_success":tool_ok,
-                "latency_ms":float(out.get("latency_ms",0))})
+                "latency_ms":latency})
         except Exception as exc:
             entries.append({"id":case["id"],"supported":True,"routing_correct":False,
                 "retrieval_hit_at_5":False if case.get("expected_doc_ids") else None,
