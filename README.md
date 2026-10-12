@@ -219,3 +219,7 @@ Run `uvicorn app.day21_api:app --reload`, then open http://127.0.0.1:8000/docs. 
 - Tenant and user scope is taken from the verified token, never request-supplied fields. Viewer role cannot create documents or ticket drafts. Ticket confirmation is not exposed.
 - Run `python3 -m pytest -q tests/test_day22_auth.py` and `python3 -m scripts.day22_demo`.
 - See `docs/day22-auth.md` for limitations and remaining RAG/MCP authorization work.
+
+## Day 23 — Docker Compose stack
+
+Day 23 adds `Dockerfile`, `docker-compose.day23.yml`, `.dockerignore`, `.env.day23.example`, a smoke-check script, and deployment tests. On macOS install Docker Desktop, then follow `docs/day23-docker.md` to create `.env`, build, and start the API + Postgres/pgvector + Ollama services. Visit http://localhost:8000/docs. The API is the Day 22 scaffold, not yet a fully wired Ollama/pgvector application. Never commit `.env` or use the default empty login account registry in production.

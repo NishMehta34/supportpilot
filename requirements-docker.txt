@@ -1,0 +1,6 @@
+# Base project dependencies are installed from requirements.txt in Dockerfile.
+# Additional runtime modules used by Days 14-22.
+langgraph>=0.2,<2
+langgraph-checkpoint-sqlite>=2,<4
+mcp>=1,<2
+PyJWT>=2.8,<3

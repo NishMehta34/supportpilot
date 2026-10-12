@@ -1,0 +1,16 @@
+.git
+.venv
+.env
+.env.*
+!.env.example
+__pycache__
+.pytest_cache
+.mypy_cache
+artifacts
+*.sqlite
+*.sqlite-*
+*.db
+*.zip
+*.pdf
+*.log
+.DS_Store
