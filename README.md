@@ -209,3 +209,13 @@ See `docs/day20-guardrails.md` for threat model and limitations. In particular, 
 ## Day 21 — Modular FastAPI service
 
 Run `uvicorn app.day21_api:app --reload`, then open http://127.0.0.1:8000/docs. Endpoints: `/health`, `/chat`, `/threads`, `/documents`, `/tickets`. The new API uses Pydantic contracts, FastAPI dependency injection, application services and a local repository. Tests: `python3 -m pytest -q tests/test_day21_api.py`. Demo: `python3 -m scripts.day21_demo`. **Development scaffold only:** no JWT authentication, no live agent wiring, no document embeddings, and no persistent API repositories yet. Ticket creation remains draft-only. See `docs/day21-service.md`.
+
+## Day 22 — Local JWT auth and tenant-aware API
+
+- Run `uvicorn app.day22_api:app --reload` (replaces the unauthenticated Day 21 API for this exercise).
+- Set `SUPPORTPILOT_JWT_SECRET` to a strong random secret of at least 32 characters. Never commit the secret.
+- The default app has no users. For tests and the demo, explicit local-only accounts are injected through `create_app(users=...)`.
+- `/login` returns a signed 30-minute bearer token; `/me`, `/threads`, `/chat`, `/documents`, and `/tickets` require it.
+- Tenant and user scope is taken from the verified token, never request-supplied fields. Viewer role cannot create documents or ticket drafts. Ticket confirmation is not exposed.
+- Run `python3 -m pytest -q tests/test_day22_auth.py` and `python3 -m scripts.day22_demo`.
+- See `docs/day22-auth.md` for limitations and remaining RAG/MCP authorization work.

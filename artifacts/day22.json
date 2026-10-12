@@ -1,0 +1,8 @@
+{
+  "missing_token_rejected": true,
+  "cross_tenant_thread_denied": true,
+  "cross_tenant_chat_denied": true,
+  "viewer_write_denied": true,
+  "valid_user_thread_access": true,
+  "passed": true
+}
