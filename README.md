@@ -172,3 +172,16 @@ Design: `docs/day16-memory.md`. The local SQLite file is sensitive and should ne
 - `artifacts/day17.json`: generated evidence; `docs/day17-long-term-memory.md`: design and limitations.
 - Checkpoint data and memory databases must not be committed to Git.
 
+
+## Day 18 — Model Context Protocol (MCP)
+
+SupportPilot exposes `get_order`, `search_kb`, and draft-only `create_ticket` through an MCP stdio server. The MCP interface calls the same `SupportToolbox.execute()` business logic as the native agent.
+
+```bash
+python3 -m pytest -q tests/test_mcp_server.py
+python3 -m scripts.day18_mcp_client
+```
+
+Evidence: `artifacts/day18.json`. Design, tool schemas, safety notes and limitations: `docs/day18-mcp.md`.
+
+**Safety:** no MCP tool can confirm ticket creation. The demo's KB retriever is a stub; production auth and tenant authorization remain future work.

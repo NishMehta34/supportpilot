@@ -1,0 +1,26 @@
+{
+  "tools_discovered": [
+    "create_ticket",
+    "get_order",
+    "search_kb"
+  ],
+  "order_result": {
+    "order_id": "ORD-1001",
+    "customer_id": "CUS-001",
+    "product_id": "PRD-001",
+    "status": "shipped",
+    "eta": "2026-10-02"
+  },
+  "kb_result": {
+    "results": [],
+    "note": "No relevant knowledge-base passage found"
+  },
+  "draft_result": {
+    "status": "pending_confirmation",
+    "draft_id": "DRAFT-0001",
+    "duplicate_of_existing_draft": false,
+    "message": "Draft staged. NO ticket has been created. A human must confirm it first. Tell the user the draft ID and that it is waiting for them."
+  },
+  "confirmation_tool_exposed": false,
+  "ticket_created": false
+}
