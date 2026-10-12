@@ -231,3 +231,9 @@ Run `python3 -m pytest -q tests/test_day24_evals.py` and `python3 -m evals.run`.
 ## Day 25 — AI-assisted engineering review
 
 Focused PR exercise: reject invalid (negative, NaN, or infinite) latency measurements in the Day 24 evaluation runner, preventing misleading benchmark reports. The implementation is in `evals/run.py`; regression tests are in `tests/test_day25_eval_hardening.py`. Follow `docs/day25-ai-coding-review.md` for the AI coding prompt, human review checklist, tests, and PR description. The benchmark fixture is synthetic; real agent evaluation remains a separate task.
+
+## Day 26 — Browser support console
+
+Run `uvicorn app.day26_api:app --reload --host 127.0.0.1` and open http://127.0.0.1:8000/. A framework-light UI provides JWT login, thread list, chat status, citations/tool activity placeholders, and human-only ticket draft confirmation. Use opt-in local demo credentials described in `docs/day26-ui.md`. Tests: `python3 -m pytest -q tests/test_day26_ui.py`. Demo: `python3 -m scripts.day26_demo`.
+
+**Scope:** Chat remains an injectable Day 21 stub by default; real LLM integration, streaming, durable database storage and production identity provisioning are not complete.
