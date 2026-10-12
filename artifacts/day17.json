@@ -1,0 +1,10 @@
+{
+  "restart_persistence": true,
+  "selective_retrieval": true,
+  "tenant_isolation": true,
+  "deleted_preference": true,
+  "remaining_tier": {
+    "support_tier": "gold"
+  },
+  "passed": true
+}

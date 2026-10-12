@@ -6,3 +6,7 @@ __pycache__/
 # Day 16: local conversation checkpoint databases
 artifacts/*.sqlite
 artifacts/*.sqlite-*
+
+# Day 17: local long-term memory databases
+artifacts/*memory*.sqlite
+artifacts/*memory*.sqlite-*

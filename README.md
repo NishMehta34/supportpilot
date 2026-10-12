@@ -163,3 +163,12 @@ cat artifacts/day16.json
 ```
 
 Design: `docs/day16-memory.md`. The local SQLite file is sensitive and should never be committed. This is thread-scoped short-term memory, not Day 17 long-term user memory.
+
+## Day 17 — Selective long-term memory
+
+- `app/long_term_memory.py`: consent-gated, tenant/user-scoped SQLite preference store.
+- `python3 -m pytest -q tests/test_long_term_memory.py`: five safety/memory tests.
+- `python3 -m scripts.day17_demo`: offline persistence, relevance, isolation, deletion demo.
+- `artifacts/day17.json`: generated evidence; `docs/day17-long-term-memory.md`: design and limitations.
+- Checkpoint data and memory databases must not be committed to Git.
+
