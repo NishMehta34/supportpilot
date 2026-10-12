@@ -185,3 +185,11 @@ python3 -m scripts.day18_mcp_client
 Evidence: `artifacts/day18.json`. Design, tool schemas, safety notes and limitations: `docs/day18-mcp.md`.
 
 **Safety:** no MCP tool can confirm ticket creation. The demo's KB retriever is a stub; production auth and tenant authorization remain future work.
+
+## Day 19 — Observability
+
+Run `python3 -m pytest -q tests/test_observability.py tests/test_health_day19.py` and `python3 -m scripts.day19_demo`.
+
+Structured diagnostics: `app/observability.py`. Design: `docs/day19-observability.md`. Ten-run report: `artifacts/day19-report.json`. Existing liveness endpoint: `GET /health`.
+
+Logs are sanitized metadata, not raw conversations or confirmation tokens. The demo uses synthetic failures, not a live model.

@@ -1,0 +1,19 @@
+{
+  "runs": 10,
+  "successful": 8,
+  "failed": 2,
+  "average_latency_ms": 0.015,
+  "failures": [
+    {
+      "request_id": "31a25849d347-03",
+      "error_type": "TimeoutError",
+      "thread_id": "demo-3"
+    },
+    {
+      "request_id": "31a25849d347-08",
+      "error_type": "TimeoutError",
+      "thread_id": "demo-8"
+    }
+  ],
+  "batch_id": "31a25849d347"
+}

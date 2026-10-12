@@ -10,3 +10,7 @@ artifacts/*.sqlite-*
 # Day 17: local long-term memory databases
 artifacts/*memory*.sqlite
 artifacts/*memory*.sqlite-*
+
+# Day 19 local execution traces
+artifacts/day19-traces/
+artifacts/day19-batch-*/
