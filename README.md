@@ -193,3 +193,15 @@ Run `python3 -m pytest -q tests/test_observability.py tests/test_health_day19.py
 Structured diagnostics: `app/observability.py`. Design: `docs/day19-observability.md`. Ten-run report: `artifacts/day19-report.json`. Existing liveness endpoint: `GET /health`.
 
 Logs are sanitized metadata, not raw conversations or confirmation tokens. The demo uses synthetic failures, not a live model.
+
+## Day 20 — Guardrails and execution budgets
+
+`app/guardrails.py` adds a per-request tool boundary with input limits, call budgets, read timeouts, restricted read retries, and no automatic write retries. It delegates authorization and ticket staging to Day 13 `SupportToolbox`.
+
+```bash
+python3 -m pytest -q tests/test_guardrails.py
+python3 -m scripts.day20_demo
+cat artifacts/day20-budget.json
+```
+
+See `docs/day20-guardrails.md` for threat model and limitations. In particular, Python thread timeouts are not hard cancellation, and this wrapper is not yet wired into all LangGraph paths.

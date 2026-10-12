@@ -1,0 +1,49 @@
+{
+  "unknown_confirmation": {
+    "error": "unknown_tool"
+  },
+  "oversized_query": {
+    "error": "arguments_too_large"
+  },
+  "normal_read": {
+    "order_id": "ORD-1001",
+    "customer_id": "CUS-001",
+    "product_id": "PRD-001",
+    "status": "shipped",
+    "eta": "2026-10-02"
+  },
+  "budget_attempts": [
+    {
+      "results": [],
+      "note": "No relevant knowledge-base passage found"
+    },
+    {
+      "results": [],
+      "note": "No relevant knowledge-base passage found"
+    },
+    {
+      "results": [],
+      "note": "No relevant knowledge-base passage found"
+    },
+    {
+      "error": "tool_budget_exhausted"
+    },
+    {
+      "error": "tool_budget_exhausted"
+    }
+  ],
+  "budget": {
+    "tool_calls": 4,
+    "attempts": 4,
+    "retries": 0,
+    "timeouts": 0,
+    "denied": 4,
+    "elapsed_ms": 0.26,
+    "events": [
+      "unknown_tool",
+      "arguments_too_large",
+      "tool_budget_exhausted",
+      "tool_budget_exhausted"
+    ]
+  }
+}
