@@ -1,0 +1,11 @@
+{
+  "kind": "offline_simulation",
+  "model_outage_handled": true,
+  "database_outage_detected": true,
+  "empty_retrieval_handled": true,
+  "duplicate_draft_prevented_in_process": true,
+  "restart_without_persistence_detected": true,
+  "live_docker_or_postgres_tested": false,
+  "durable_idempotency_tested": false,
+  "live_langgraph_recovery_tested": false
+}

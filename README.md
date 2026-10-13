@@ -247,3 +247,10 @@ Run `uvicorn app.day26_api:app --reload --host 127.0.0.1` and open http://127.0.
 - `docs/day27-threat-model.md`: trust boundaries, mitigations, **unresolved high-priority findings** and integration plan.
 
 Run `python3 -m pytest -q tests/test_day27_security.py tests/test_support_tools.py` and `python3 -m scripts.day27_demo`. This is an adversarial test package, **not** a claim of production security approval.
+
+## Day 28 — Resilience and production-readiness drills
+
+- Run `python3 -m pytest -q tests/test_day28_resilience.py`.
+- Run `python3 -m scripts.day28_demo` for offline simulated failure evidence in `artifacts/day28_readiness.json`.
+- Review `docs/day28-readiness.md` for the seven-scenario readiness matrix and live Mac/Docker drill plan.
+- **Limitations:** No automatic wiring to live APIs, no durable idempotency, no persisted thread recovery, and no live concurrency benchmark. Do not call the service production-ready on the basis of the offline tests.
