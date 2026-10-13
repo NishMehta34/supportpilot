@@ -1,0 +1,555 @@
+{
+  "mode": "predictions",
+  "is_live_model_evaluation": false,
+  "note": "Fixture results are oracle plumbing checks; prediction mode scores external predictions but does not prove how they were generated.",
+  "summary": {
+    "total": 50,
+    "passed": 10,
+    "failed": 40,
+    "pass_rate": 0.2
+  },
+  "failed_cases": [
+    {
+      "id": "E03",
+      "category": "easy",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "E05",
+      "category": "easy",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "E07",
+      "category": "easy",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "E08",
+      "category": "easy",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "E09",
+      "category": "easy",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "E10",
+      "category": "easy",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "M01",
+      "category": "multi_document",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "M03",
+      "category": "multi_document",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "M04",
+      "category": "multi_document",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "O01",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "O02",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "O03",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "O04",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "O05",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "O06",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "T04",
+      "category": "tool",
+      "passed": false,
+      "reason": "route mismatch; tool failure"
+    },
+    {
+      "id": "T05",
+      "category": "tool",
+      "passed": false,
+      "reason": "route mismatch; tool failure"
+    },
+    {
+      "id": "T06",
+      "category": "tool",
+      "passed": false,
+      "reason": "route mismatch; tool failure"
+    },
+    {
+      "id": "D01",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "D02",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F01",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F02",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F03",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F04",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch; tool failure"
+    },
+    {
+      "id": "F05",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F06",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F07",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch; tool failure"
+    },
+    {
+      "id": "F08",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F09",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F10",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F11",
+      "category": "tool",
+      "passed": false,
+      "reason": "tool failure"
+    },
+    {
+      "id": "F12",
+      "category": "tool",
+      "passed": false,
+      "reason": "tool failure"
+    },
+    {
+      "id": "F13",
+      "category": "tool",
+      "passed": false,
+      "reason": "route mismatch; tool failure"
+    },
+    {
+      "id": "F14",
+      "category": "tool",
+      "passed": false,
+      "reason": "route mismatch; tool failure"
+    },
+    {
+      "id": "F15",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F16",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F17",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F18",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F19",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F20",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    }
+  ],
+  "rows": [
+    {
+      "id": "E01",
+      "category": "easy",
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "E02",
+      "category": "easy",
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "E03",
+      "category": "easy",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "E04",
+      "category": "easy",
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "E05",
+      "category": "easy",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "E06",
+      "category": "easy",
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "E07",
+      "category": "easy",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "E08",
+      "category": "easy",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "E09",
+      "category": "easy",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "E10",
+      "category": "easy",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "M01",
+      "category": "multi_document",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "M02",
+      "category": "multi_document",
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "M03",
+      "category": "multi_document",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "M04",
+      "category": "multi_document",
+      "passed": false,
+      "reason": "missing correct citation"
+    },
+    {
+      "id": "M05",
+      "category": "multi_document",
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "M06",
+      "category": "multi_document",
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "O01",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "O02",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "O03",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "O04",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "O05",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "O06",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "T01",
+      "category": "tool",
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "T02",
+      "category": "tool",
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "T03",
+      "category": "tool",
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "T04",
+      "category": "tool",
+      "passed": false,
+      "reason": "route mismatch; tool failure"
+    },
+    {
+      "id": "T05",
+      "category": "tool",
+      "passed": false,
+      "reason": "route mismatch; tool failure"
+    },
+    {
+      "id": "T06",
+      "category": "tool",
+      "passed": false,
+      "reason": "route mismatch; tool failure"
+    },
+    {
+      "id": "D01",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "D02",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F01",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F02",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F03",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F04",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch; tool failure"
+    },
+    {
+      "id": "F05",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F06",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F07",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch; tool failure"
+    },
+    {
+      "id": "F08",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F09",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F10",
+      "category": "adversarial",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F11",
+      "category": "tool",
+      "passed": false,
+      "reason": "tool failure"
+    },
+    {
+      "id": "F12",
+      "category": "tool",
+      "passed": false,
+      "reason": "tool failure"
+    },
+    {
+      "id": "F13",
+      "category": "tool",
+      "passed": false,
+      "reason": "route mismatch; tool failure"
+    },
+    {
+      "id": "F14",
+      "category": "tool",
+      "passed": false,
+      "reason": "route mismatch; tool failure"
+    },
+    {
+      "id": "F15",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F16",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F17",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F18",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F19",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    },
+    {
+      "id": "F20",
+      "category": "out_of_scope",
+      "passed": false,
+      "reason": "route mismatch"
+    }
+  ]
+}
