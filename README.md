@@ -237,3 +237,13 @@ Focused PR exercise: reject invalid (negative, NaN, or infinite) latency measure
 Run `uvicorn app.day26_api:app --reload --host 127.0.0.1` and open http://127.0.0.1:8000/. A framework-light UI provides JWT login, thread list, chat status, citations/tool activity placeholders, and human-only ticket draft confirmation. Use opt-in local demo credentials described in `docs/day26-ui.md`. Tests: `python3 -m pytest -q tests/test_day26_ui.py`. Demo: `python3 -m scripts.day26_demo`.
 
 **Scope:** Chat remains an injectable Day 21 stub by default; real LLM integration, streaming, durable database storage and production identity provisioning are not complete.
+
+## Day 27 — Adversarial testing and security review
+
+- `tests/test_day27_security.py`: 17 offline abuse-case tests spanning JWTs, tenant isolation, tools, ticket confirmation, input limits, repeat requests, retrieval and errors.
+- `app/day27_security.py`: strict tenant-checked retrieval adapter for **new integrations**; not yet wired into all live agent/MCP paths.
+- `app/support_tools.py`: targeted patch preventing raw exception messages from leaking in generic tool failures.
+- `scripts/day27_demo.py`: writes `artifacts/day27_security.json`.
+- `docs/day27-threat-model.md`: trust boundaries, mitigations, **unresolved high-priority findings** and integration plan.
+
+Run `python3 -m pytest -q tests/test_day27_security.py tests/test_support_tools.py` and `python3 -m scripts.day27_demo`. This is an adversarial test package, **not** a claim of production security approval.

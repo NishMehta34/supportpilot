@@ -212,7 +212,7 @@ class SupportToolbox:
         except TypeError as error:           # wrong or extra arguments (e.g. confirmed=True)
             return {"error": f"Invalid arguments for {name}: {error}"}
         except Exception as error:           # a broken tool must never crash the agent
-            return {"error": f"Tool {name} failed: {error}"}
+            return {"error": f"Tool {name} unavailable"}
 
     def _tool_search_kb(self, query):
         if not isinstance(query, str) or not query.strip():
